@@ -572,7 +572,7 @@ nav .mbr-section-btn {
 
 .navbar {
   display: -webkit-flex;
-  -webkit-flex-wrapzz: wrap;
+  -webkit-flex-wrap: wrap;
   -webkit-align-items: center;
   -webkit-justify-content: space-between;
 }
