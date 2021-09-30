@@ -45,3 +45,8 @@ IMG:hover {
   z-index: 2;
   transform: scale(2);
 }
+
+.galerie1 {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
