@@ -1,11 +1,16 @@
-<?php $name = $_POST['name'];
-$email = $_POST['email'];
-$tel = $_POST['tel'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "contact@dr-stellamotoc.ro";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Ups! Mai Încearcă odată!");
-echo "Mulțumim!";
+<?php
+if(!empty($_POST["send"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$subject = $_POST["subject"];
+	$content = $_POST["content"];
+
+	$toEmail = "contact@dr-stellamotoc.ro";
+	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+	if(mail($toEmail, $subject, $content, $mailHeaders)) {
+	    $message = "Mesaj trimis cu succes";
+	    $type = "success";
+	}
+}
+require_once "contact-view.php";
 ?>
