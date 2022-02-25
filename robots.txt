@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow:
+User-agent: *
+Disallow: /assets/images/1-400x400.jpeg
+Disallow: /assets/images/emy-200x200.jpg
+Disallow: /assets/images/eduard-400x400.jpeg
+Sitemap: https://dr-stellamotoc.ro/sitemap.xml
