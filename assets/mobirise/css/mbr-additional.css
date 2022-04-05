@@ -44,6 +44,13 @@ body {
 .display-7 > .mbr-iconfont {
   font-size: 1.5rem;
 }
+/*menu icons*/
+@media (min-width: 990px) {
+  #icons-menu-none {
+    display: none;
+  }
+  
+}
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
@@ -81,6 +88,8 @@ body {
     line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
   }
 }
+
+
 /* Buttons */
 .btn {
   padding: 0.6rem 1.2rem;
@@ -514,7 +523,7 @@ a.text-danger.active {
 a.text-white:hover,
 a.text-white:focus,
 a.text-white.active {
-  color: #c7c7c7 !important;
+  color: #1a134c !important;
 }
 a.text-black:hover,
 a.text-black:focus,
@@ -5222,3 +5231,9 @@ padding-bottom: 2px;
   width: 540px;
   height: 360px;
 }
+.ul-servicii-oferite {
+  width: 100% !important;
+  padding: 0px 5% !important;
+  
+}
+
